@@ -1,13 +1,22 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {},
+    "parameters": {
+        "resource_name": {
+            "type": "string",
+            "defaultValue": "yizhoucnredistest"
+        },
+        "location_region": {
+            "type": "string",
+            "defaultValue": "chinanorth"
+        }
+    },
     "resources": [
         {
             "type": "Microsoft.Cache/redis",
             "apiVersion": "2020-06-01",
-            "name": "parameters[('resource_name')]",
-            "location": "parameters[('location_region')]",
+            "name": "[parameters('resource_name')]",
+            "location": "[parameters('location_region')]",
             "dependsOn": [],
             "tags": {},
             "properties": {
