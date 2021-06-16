@@ -3,6 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "resourcegroup_name": "yizhouarmchinanorth",
+        "resource_name": "yizhoucnredistest",
         "location_region": "chinanorth"
     }
 }

@@ -6,8 +6,8 @@
         {
             "type": "Microsoft.Cache/redis",
             "apiVersion": "2020-06-01",
-            "name": "yizhoucnredistest",
-            "location": "chinanorth",
+            "name": "parameters[('resource_name')]",
+            "location": "parameters[('location_region')]",
             "dependsOn": [],
             "tags": {},
             "properties": {
