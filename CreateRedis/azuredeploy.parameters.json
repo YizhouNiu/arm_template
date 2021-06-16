@@ -2,7 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "resource_name": "yizhoucnredistest",
-        "location_region": "chinanorth",
+        "resource_name": {
+            "defaultValue": "yizhoucnredistest",
+            "type": "String"
+        },
+        "location_region": {
+            "defaultValue": "chinanorth",
+            "type": "String"
+        },
     }
 }
