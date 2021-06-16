@@ -3,12 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "resource_name": {
-            "defaultValue": "yizhoucnredistest",
-            "type": "String"
+            "value": "yizhoucnredistest"
         },
         "location_region": {
-            "defaultValue": "chinanorth",
-            "type": "String"
-        },
+            "value": "chinanorth"
+        }
     }
 }
